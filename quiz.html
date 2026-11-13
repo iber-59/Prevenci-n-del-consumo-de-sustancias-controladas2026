@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elige Vivir | Cuestionario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <link rel="stylesheet" href="css/animaciones.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Prevención del consumo de sustancias controladas. </h1>
+        <p>Decir <span class="escudo">🛡️</span> NO a las drogas es decir SI a tus <span class="sueno">⭐</span> sueños, a tu salud <span class="corazon">❤️</span> y a los que te quieren.</p>
+       
+        <nav>
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#informacion">Información</a>
+            <a href="quiz.html">Cuestionario</a>
+            <a href="index.html#equipo">Nuestro equipo</a>
+        </nav>
+    </header>
+
+    <main>   
+
+        <section id="quiz">
+            <h2>Cuestionario de prevención</h2>
+            <p>Responde las preguntas para repasar lo aprendido. Al final verás tu puntaje.</p>
+
+            <div id="pantallaInicio" class="caja-quiz">
+                <button id="btnComenzar" class="boton">Comenzar</button>
+            </div>
+
+            <div id="pantallaPregunta" class="caja-quiz oculto">
+                <p id="textoProgreso"></p>
+                <p id="textoPuntaje">Puntos: 0</p>
+                <!-- <div class="barra-fondo"><div id="barraQuiz"></div></div> -->
+                <h3 id="textoPregunta"></h3>
+                <div id="contenedorOpciones"></div>
+                <button id="btnSiguiente" class="boton" disabled>Siguiente</button>
+            </div>
+
+            <div id="pantallaResultado" class="caja-quiz oculto">
+                <h3>Resultado</h3>
+                <p id="circuloPuntaje" class="puntaje-final">0%</p>
+                <p id="mensajeResultado"></p>
+                <button id="btnReiniciar" class="boton">Intentar otra vez</button>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>Elige Vivir — Proyecto educativo de prevención</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
