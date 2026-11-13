@@ -1,5 +1,5 @@
 // preguntas: true = verdadero, false = falso
-var preguntas = [
+let preguntas = [
   { texto: "Las drogas pueden dañar tu salud.", respuesta: true },
   { texto: "El alcohol y el cigarrillo también son drogas.", respuesta: true },
   { texto: "Las drogas ayudan a resolver los problemas.", respuesta: false },
@@ -7,8 +7,8 @@ var preguntas = [
   { texto: "Hacer deporte te ayuda a alejarte de las drogas.", respuesta: true }
 ];
 
-var actual = 0;
-var puntos = 0;
+let actual = 0;
+let puntos = 0;
 
 function mostrarPantalla(id) {
   document.getElementById("pantallaInicio").classList.add("oculto");
@@ -52,7 +52,7 @@ document.getElementById("btnSiguiente").onclick = function () {
     mostrarPregunta();
   } else {
     mostrarPantalla("pantallaResultado");
-    var porcentaje = puntos / preguntas.length * 100;
+    let porcentaje = puntos / preguntas.length * 100;
     document.getElementById("circuloPuntaje").textContent = porcentaje + "%";
     document.getElementById("mensajeResultado").textContent =
       "Acertaste " + puntos + " de " + preguntas.length + " preguntas.";
