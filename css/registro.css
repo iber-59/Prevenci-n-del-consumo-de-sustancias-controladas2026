@@ -1,0 +1,105 @@
+/* ===== Formulario de registro ===== */
+.registro-caja {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    color: #222;
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 16px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #999;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.campo input:focus { border-color: #1565c0; }
+.campo input.valido { border-color: #2e7d32; background: #e8f5e9; }
+.campo input.invalido { border-color: #c62828; background: #ffebee; }
+
+.error {
+    display: block;
+    min-height: 18px;
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #c62828;
+}
+
+.boton-registro {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #2e7d32;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.boton-registro:hover { background: #1b5e20; transform: scale(1.02); }
+
+/* ===== Tabla ===== */
+.tabla-contenedor {
+    max-width: 900px;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+#tablaRegistros {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    color: #222;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+#tablaRegistros th {
+    padding: 12px;
+    color: #fff;
+    background: #1565c0;
+}
+
+#tablaRegistros td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#tablaRegistros tbody tr:hover { background: #f1f8ff; }
+
+.btn-eliminar {
+    padding: 6px 12px;
+    color: #fff;
+    background: #c62828;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover { background: #8e0000; }
+
+#mensajeVacio {
+    text-align: center;
+    font-weight: bold;
+}

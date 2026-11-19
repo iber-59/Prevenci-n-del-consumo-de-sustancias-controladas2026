@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejo del día | Elige Vivir</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/consejos.css">
+</head>
+<body>
+    <header>
+        <h1>Consejo del día</h1>
+        <p>Pequeñas ideas para cuidar tu salud y tus decisiones.</p>
+
+        <button id="btnMenu" class="btn-menu" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="menuPrincipal">
+            <a href="index.html">← Volver al inicio</a>
+            <a href="juegoDePalabras.html">Completa las palabras</a>
+            <a href="registro.html">Registro</a>
+            <a href="quiz.html">Cuestionario</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="consejos">
+            <h2>¿Necesitas una idea?</h2>
+
+            <div class="consejo-caja">
+                <p id="icono" class="icono">💡</p>
+                <p id="textoConsejo" class="texto-consejo">Presiona el botón para ver un consejo.</p>
+                <button id="btnConsejo" class="boton-consejo">Dame un consejo</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Elige Vivir — Proyecto educativo de prevención</p>
+    </footer>
+
+    <script src="js/consejos.js" defer></script>
+    <script src="js/menu.js" defer></script>
+</body>
+</html>

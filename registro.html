@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de personas | Elige Vivir</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de personas</h1>
+        <p>Completa tus datos para registrarte en el proyecto.</p>
+
+        <button id="btnMenu" class="btn-menu" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="menuPrincipal">
+            <a href="index.html">← Volver al inicio</a>
+            <a href="juegoDePalabras.html">Completa las palabras</a>
+            <a href="quiz.html">Cuestionario</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registro">
+            <h2>Nuevo registro</h2>
+
+            <form id="formRegistro" class="registro-caja" novalidate>
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ej: Juan Carlos" autocomplete="off">
+                    <span class="error" id="error-nombre"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Ej: Pérez Mamani" autocomplete="off">
+                    <span class="error" id="error-apellido"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="carnet">Carnet de identidad</label>
+                    <input type="text" id="carnet" placeholder="Ej: 1234567" inputmode="numeric" autocomplete="off">
+                    <span class="error" id="error-carnet"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="celular">Celular</label>
+                    <input type="text" id="celular" placeholder="Ej: 71234567" inputmode="numeric" autocomplete="off">
+                    <span class="error" id="error-celular"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" placeholder="Ej: Calle Bolívar #123" autocomplete="off">
+                    <span class="error" id="error-direccion"></span>
+                </div>
+
+                <button type="submit" class="boton-registro">Registrar</button>
+            </form>
+        </section>
+
+        <section id="lista">
+            <h2>Personas registradas</h2>
+
+            <div class="tabla-contenedor">
+                <table id="tablaRegistros">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Carnet</th>
+                            <th>Celular</th>
+                            <th>Dirección</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla"></tbody>
+                </table>
+            </div>
+
+            <p id="mensajeVacio">Todavía no hay personas registradas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Elige Vivir — Proyecto educativo de prevención</p>
+    </footer>
+
+    <script src="js/registro.js" defer></script>
+    <script src="js/menu.js" defer></script>
+</body>
+</html>

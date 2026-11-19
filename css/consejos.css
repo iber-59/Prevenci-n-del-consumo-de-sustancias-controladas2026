@@ -1,0 +1,49 @@
+/* ===== Consejo del día ===== */
+.consejo-caja {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    color: #222;
+    text-align: center;
+}
+
+.icono {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.texto-consejo {
+    min-height: 70px;
+    margin: 16px 0 24px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.texto-consejo.cambia {
+    animation: aparecer 0.4s;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.boton-consejo {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #2e7d32;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.boton-consejo:hover {
+    background: #1b5e20;
+    transform: scale(1.05);
+}
