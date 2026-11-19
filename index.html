@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="css/estilos.css">    
     <link rel="stylesheet" href="css/animaciones.css">
     <link rel="stylesheet" href="css/personas.css">
-
+    <link rel="stylesheet" href="css/juegoDePalabras.css">
+    <link rel="stylesheet" href="css/menu.css">
 
 </head>
+    <script src="js/menu.js" defer></script>
+</body>
 <body>
     <header>
         <h1>Prevención del consumo de sustancias controladas. </h1>
         <p>Decir <span class="escudo">🛡️</span> NO a las drogas es decir SI a tus <span class="sueno">⭐</span> sueños, a tu salud <span class="corazon">❤️</span> y a los que te quieren.</p>
         
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#informacion">Información</a>
-            <a href="quiz.html">Cuestionario</a>
-            <a href="#equipo">Nuestro equipo</a>
-        </nav>
+        <button id="btnMenu" class="btn-menu" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<nav id="menuPrincipal">
+    <a href="#inicio">Inicio</a>
+    <a href="#informacion">Información</a>
+    <a href="juegoDePalabras.html">Completa las palabras</a>
+    <a href="quiz.html">Cuestionario</a>
+    <a href="#equipo">Nuestro equipo</a>
+</nav>
     </header>
 
     <main>
@@ -132,9 +142,6 @@
 </div>
 </section>
 
-    
-</section>
-
         <section id="personas">
     <h2>Elige una vida sana</h2>
 
@@ -217,6 +224,13 @@
 
     </div>
 </section>
+
+        <!-- ===== Enlace al ejercicio (página aparte) ===== -->
+        <section id="juego">
+            <h2>Pon a prueba lo que sabes</h2>
+            <p>Completa las frases con la palabra correcta y descubre cuánto sabes sobre la prevención del consumo de drogas.</p>
+            <a class="enlace-juego" href="juegoDePalabras.html">🎮 Jugar: Completa las palabras</a>
+        </section>
 
         <section id="equipo">
             <h2>Sobre el proyecto</h2>

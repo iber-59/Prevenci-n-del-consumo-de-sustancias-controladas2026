@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completa las palabras | Elige Vivir</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/juegoDePalabras.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+    <script src="js/juegoDePalabras.js" defer></script>
+    <script src="js/menu.js" defer></script>
+</body>
+<body>
+    <header>
+        <h1>Completa las palabras</h1>
+        <p>Pon a prueba lo que sabes sobre la prevención del consumo de drogas.</p>
+
+       <button id="btnMenu" class="btn-menu" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<nav id="menuPrincipal">
+    <a href="index.html">← Volver al inicio</a>
+    <a href="index.html#informacion">Información</a>
+    <a href="quiz.html">Cuestionario</a>
+    <a href="index.html#equipo">Nuestro equipo</a>
+</nav>
+    </header>
+
+    <main>
+        <section id="quiz">
+            <h2>Escribe la palabra que falta</h2>
+
+            <div class="quiz-caja">
+                <p>Completa cada frase con la palabra correcta.</p>
+
+                <div id="listaFrases"></div>
+
+                <button id="btnComprobar" class="boton">Comprobar</button>
+                <button id="btnReiniciar" class="boton secundario">Reiniciar</button>
+
+                <p id="resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Elige Vivir — Proyecto educativo de prevención</p>
+    </footer>
+
+    <script src="js/juegoDePalabras.js" defer></script>
+</body>
+</html>
